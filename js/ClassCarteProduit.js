@@ -1,8 +1,8 @@
-/* Création de la classe carte pour la page Index
+// Création de la classe carte pour la page Index
     affichageCarte() 
     => a pour but de créer les différents élements, de les assigner dans le DOM
     => a pour but de générer une URL à partir des éléments de la carte cliquée
-*/
+//
 class Carte {
 
     constructor(lenses, _id, name, price, description, imageUrl){
