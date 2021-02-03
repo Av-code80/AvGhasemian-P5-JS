@@ -19,6 +19,7 @@ const postData = async(method, url, data) => {
     return await response.json();
 }
 
+
 //On vérifie que le panier n'est pas vide lors de la soumission du formulaire 
 
 //Si le prix total est différent de 0 alors au clic sur le bouton submit nous demandons : 
