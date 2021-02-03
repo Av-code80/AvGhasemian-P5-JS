@@ -1,6 +1,6 @@
 # projet5-oc-Orinoco
 
-# Orinoco
+# Orinoco 
 
 ![](images/logo.png)
 
@@ -45,10 +45,16 @@ L’application web sera composée de 4 pages :
 * SASS
 * WEBPACK
 
-# API 
+# API fourni par Openclassrooms 
 
 Voici l'adresse de [l'API :](https://oc-p5-api.herokuapp.com/api/cameras)
 
+### Compétences dévelopées
+
+* Valider des données issues de sources externes
+* Gérer des événements JavaScript
+* Créer un plan de test pour une application
+* Interagir avec un web service avec JavaScript
 
 # Résultat
 
