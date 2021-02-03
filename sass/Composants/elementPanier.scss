@@ -1,0 +1,75 @@
+.panier{
+    &__produit{
+        display: flex;
+        height: 2.66rem;
+        font-family: $second-font;
+        text-align: center;
+        line-height: 2.66rem;
+        margin-bottom: .8rem;
+        &__photo{
+            width: 18%;
+            background-color: $color-third;
+        }
+        &__titre{
+            width: 40%;
+            background-color: $color-secondary;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        &__quantite{
+            width: 30%;
+            margin-left: 2%;
+            background-color: $color-third;
+            color: $color-secondary;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__corbeille{
+            height: 100%;
+            width: 10%;
+            background-color: $color-secondary;
+            padding-top: 4px;
+            &:hover{
+                opacity: .8;
+                cursor: pointer;
+                border: $color-third 2px dotted;
+            }
+        }
+    }
+}
+.quantiteMoins, .quantitePlus {
+    background-color: white;
+    color: black;
+    width: 33%;
+    border: solid 2px $color-third;
+    font-family: $main-font;
+    font-size: 1.5rem;
+    &:hover{
+        cursor: pointer;
+        background-color: $color-secondary;
+    }
+}
+
+.quantiteEgal{
+    width:33%;
+    background-color: $color-third;
+    border : none;
+    text-align: center;
+    color: white;
+    font-family: $second-font;
+    font-size : 1.5rem;
+}
+
+.servicePro{
+    background-color: $color-third ;
+    color: white;
+    font-family: $main-font;
+    border-radius: 3rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    
+}

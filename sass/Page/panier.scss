@@ -1,0 +1,91 @@
+.panier-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.panier-prix{
+    display: flex;
+    justify-content: flex-end;  
+    margin-top: 2.33rem;
+    font-size: 1.5rem;
+    &__total{
+        font-family: $second-font;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: $color-third;
+        font-weight: 700;
+        margin: auto 0;
+    }
+    &__pTotal{
+        width: 50%;
+        margin-left: 5%;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        border: $color-third solid 3px; 
+        border-radius: 3rem;
+        color: $color-third;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+.formulaire{
+    margin-top: 4.66rem;
+    font-family: $second-font;
+    &__titre{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+    &__petit{
+        display: flex;
+    }
+    &__label{
+        font-size: .8rem;
+        padding-left: 5%;
+        margin-bottom: 2rem;
+    }
+    &__input{
+        background-color: $color-secondary;
+        border: none;
+        border-radius: 2rem;
+        height: 2rem;   
+        width: 87%;     
+        margin-top: .3rem;
+        margin-bottom: .8rem;
+        padding-left: 3rem;
+        font-size: 1.2rem;
+        &:focus, &:active{
+            border: 2px solid $color-third;
+        }
+    }
+    &__validation{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__submit, &__reset{
+        border-radius: 2rem;
+        border: none;
+        background-color: $color-third;
+        color: white;
+        height: 2rem;
+        width: 40%;
+        font-size: 1.5rem;
+        font-family: $second-font;
+        font-weight: 500;
+        position: relative;
+        &:hover{
+            opacity: .6;
+            cursor: pointer;
+        }
+    }
+    &__erreur{
+        color: #CC7838;
+    }
+    &__error{
+        border: #CC7838 2px solid;
+    }
+}
