@@ -49,7 +49,8 @@ if(parseInt(prixTotal.innerText) !== 0){
         // Enfin nous appelons notre méthode postData avec l'ensemble des éléments nécessaires pour recevoir ensuite la réponse voulue avec l'ID de commande. 
         const response = await postData('POST','https://oc-p5-api.herokuapp.com/api/cameras/order', donneesServeur);
         //Nous renvoyons l'utilisateur vers la page de confirmation avec l'ensemble des éléments de la réponse et du formulaire dans l'URL. 
-        window.location = `confirmation.html?id=${response.orderId}&firstName=${prenom.value}&lastName=${nom.value}&totalPrice=${prixPanier.innerText}`
+        window.location = `confirmation.html?id=${response.orderId}&firstName=
+        ${prenom.value}&lastName=${nom.value}&totalPrice=${prixPanier.innerText}`
     });
 //Si le prix total est à 0 nous empéchons l'envoi du formulaire avec une popup personnalisée expliquant l'erreur à l'utilisateur. 
 }else{
