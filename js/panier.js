@@ -20,7 +20,8 @@ function updatePrixTotal(){
         //On ajoute à notre valeur de départ l'ensemble des prix totaux par objet
         aPayer += prixTotalAppareil
     }
-    prixTotal.innerText = Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(aPayer);
+    prixTotal.innerText = Intl.NumberFormat('fr-FR', 
+    { style: 'currency', currency: 'EUR' }).format(aPayer);
 }
 // A chaque fois que l'on entend un évènement de modification du panier, on met à jour le prix. 
 document.addEventListener("updatePanier", () => {
