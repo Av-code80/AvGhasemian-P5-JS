@@ -1,8 +1,9 @@
-// Création de la classe carte pour la page Index
+/* Création de la classe carte pour la page Index
+
     affichageCarte() 
     => a pour but de créer les différents élements, de les assigner dans le DOM
     => a pour but de générer une URL à partir des éléments de la carte cliquée
-//
+*/
 class Carte {
 
     constructor(lenses, _id, name, price, description, imageUrl){
@@ -13,6 +14,7 @@ class Carte {
         this.description = description,
         this.imageUrl = imageUrl
     }
+
 
     affichageCarte(){
 
@@ -31,6 +33,7 @@ class Carte {
             carteLenses.appendChild(carteLensesItems); 
         });
         
+
         // Assignation des éléments 
         wrapper.appendChild(carte);
         carte.appendChild(carteImage);carte.appendChild(cartePrix);carte.appendChild(carteDescription);
@@ -39,7 +42,7 @@ class Carte {
         carte.appendChild(carteDescriptionHover);
         
         // Création automatique de l'URL de destination qui prend en compte l'Id de chaque produit.
-        const urlElement = new URL("https://av-code80.github.io/AvGhasemian-P5-JS/index.html");
+        const urlElement = new URL("https://av-code80.github.io/AvGhasemian-P5-JS/produit.html");
             urlElement.searchParams.set("id", this._id);
             
         // Au clic sur chaque carte, nous renvoyons vers l'URL correspondante au produit
