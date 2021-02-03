@@ -1,3 +1,4 @@
+
 //Création de la requete fetch asynchrone, on attend la réponse puis on appelle le JSON de la réponse.
 const myUrl = new URL(window.location.href);
 const fetchApi = async function () {
@@ -9,8 +10,10 @@ const fetchApi = async function () {
     // On sélectionne les éléments qui afficheront les résultats donnés par le fichier JSON, puis on y implémente les valeurs voulues
     document.getElementById('name').textContent = appareil.name;
     document.getElementById('description').textContent = appareil.description;
-    document.getElementById('price').textContent = Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(appareil.price/100);
-    document.getElementById('image-container').innerHTML = `<img id="image" src="${appareil.imageUrl}" class="page-produit__image" alt="image de l'appareil photo selectionné">`;
+    document.getElementById('price').textContent = Intl.NumberFormat('fr-FR', 
+    { style: 'currency', currency: 'EUR' }).format(appareil.price/100);
+    document.getElementById('image-container').innerHTML = 
+    `<img id="image" src="${appareil.imageUrl}" class="page-produit__image" alt="image de l'appareil photo selectionné">`;
 
     // Pour les options, nous optons pour du innerHTML avec un complétion complétion automatique générée par la méthode forEach.
     let select = `<select><option value="">Choisissez votre lentille</option>`;
