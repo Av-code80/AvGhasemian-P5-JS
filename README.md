@@ -60,4 +60,4 @@ Voici l'adresse de [l'API :](https://oc-p5-api.herokuapp.com/api/cameras)
 
 Voici mon [site Orinoco à consulter :](https://av-code80.github.io/AvGhasemian-P5-JS/)
 
-![]{orinoco.png}
+![](https://github.com/Av-code80/AvGhasemian-P5-JS/blob/master/images/orinoco.jpg)
