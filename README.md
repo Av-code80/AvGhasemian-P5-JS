@@ -1,4 +1,4 @@
-# projet5-oc-Orinoco
+# projet5-oc-Orinoco - MVP du website Orinoco (Minimum viable product)
 
 # Orinoco 
 
