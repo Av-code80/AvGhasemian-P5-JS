@@ -37,7 +37,8 @@ class Carte {
         carteDescription.classList.add('carte__description');
 
         const carteDescriptionHover = document.createElement('div');
-        carteDescriptionHover.classList.add('carte__description-hover');carteDescriptionHover.textContent = this.description;
+        carteDescriptionHover.classList.add('carte__description-hover');
+        carteDescriptionHover.textContent = this.description;
 
         const carteTitre = document.createElement('h2'); 
         carteTitre.classList.add('carte__description__titre');
@@ -55,7 +56,10 @@ class Carte {
 
         // Assignation des éléments 
         wrapper.appendChild(carte);
-        carte.appendChild(carteImage);carte.appendChild(cartePrix);carte.appendChild(carteDescription);
+        carte.appendChild(carteImage);
+        carte.appendChild(cartePrix);
+        carte.appendChild(carteDescription);
+        
         carteDescription.appendChild(carteTitre);
         carteDescription.appendChild(carteLenses);
         carte.appendChild(carteDescriptionHover);
