@@ -356,7 +356,7 @@ header {
 
 
 #logo {
-  width: 33%;
+  width: 35%;
 }
 #logo:hover {
   opacity: 0.5;
@@ -394,7 +394,11 @@ main {
   min-height: 80vh;
 }
 
-p, li {
+main h2{
+  text-align: center;
+  margin: 10px 0px 15px; 
+}
+
   font-family: "Roboto";
   font-weight: 300;
   font-size: 1rem;
