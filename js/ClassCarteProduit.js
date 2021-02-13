@@ -78,3 +78,4 @@ class Carte {
         return Intl.NumberFormat(lang, { style: 'currency', currency: money }).format(this.price/100)
     }
 }
+
