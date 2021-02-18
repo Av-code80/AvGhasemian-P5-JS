@@ -2,7 +2,7 @@
 //Création de la requete fetch asynchrone, on attend la réponse puis on appelle le JSON de la réponse.
 const myUrl = new URL(window.location.href);
 const fetchApi = async function () {
-    const response = await fetch (''+ myUrl.searchParams.get("id"))
+    const response = await fetch ('https://oc-p5-api.herokuapp.com/api/cameras/'+ myUrl.searchParams.get("id"))
     const jsonData = await response.json();
 
     //On sotcke les éléments du fichier JSON dans une variable.
@@ -72,4 +72,3 @@ const fetchApi = async function () {
 } 
 //On appelle notre fonction
 fetchApi();
-
