@@ -18,7 +18,7 @@ blocConfirmation.innerHTML = `<p class="confirmation__titre">Merci pour votre co
 function clearCart(){
     let cartToClear = localStorage.getItem('panier');
     if (cartToClear != null) {
-        localStorage.clear('panier');
+        localStorage.clear('panier');ls
     } 
 }
 clearCart();
