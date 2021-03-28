@@ -1,6 +1,5 @@
-# projet5-oc-Orinoco - MVP du website Orinoco (Minimum viable product)
+# Shop-Project-Audiovisuel - MVP du website (Minimum viable product)
 
-# Orinoco 
 
 ![](images/logo.png)
 
@@ -45,7 +44,7 @@ L’application web sera composée de 4 pages :
 * SASS
 * WEBPACK
 
-# API fourni par Openclassrooms 
+# API 
 
 Voici l'adresse de [l'API :](https://oc-p5-api.herokuapp.com/api/cameras)
 
