@@ -1,7 +1,6 @@
 # Shop-Project-Audiovisuel - MVP du website (Minimum viable product)
 
 
-![](images/logo.png)
 
 # Scénario
 
