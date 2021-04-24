@@ -37,6 +37,6 @@ Voici l'adresse de [l'API :](https://oc-p5-api.herokuapp.com/api/cameras)
 
 # Résultat
 
-Voici mon [site Orinoco à consulter :](https://av-code80.github.io/AvGhasemian-P5-JS/)
+Voici mon [site à consulter :](https://av-code80.github.io/AvGhasemian-P5-JS/)
 
 ![](https://github.com/Av-code80/AvGhasemian-P5-JS/blob/master/images/orinoco.jpg)
