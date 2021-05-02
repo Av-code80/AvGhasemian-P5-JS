@@ -17,13 +17,12 @@ const fetchApi = async function () {
     `<img id="image" src="${appareil.imageUrl}" class="page-produit__image" alt="image de l'appareil photo selectionné">`; //???
 
     // Pour les options, nous optons pour du innerHTML avec un complétion automatique générée par la méthode forEach.
-    let select = `<select><option value="">Choisissez votre lentille</option>`;
+    let select = `<select><option value="">Choisissez votre lentille</option>`;   //???
     
-
     appareil.lenses.forEach(element => {
         select += `<option>${element}</option>`                      //???
     })
-        select += `</select>`;
+        select += `</select>`;                                          //???
     document.getElementById('selecteur').innerHTML = select; 
 
     // On séléctionne le bouton qui sera l'élément déclencheur de l'ajout au panier
@@ -39,7 +38,7 @@ const fetchApi = async function () {
             qty: 1
         }
         // On crée la variable qui permet d'afficher le local storage sous forme d'objet JSON
-        let panierParse = JSON.parse(localStorage.getItem('panier'));
+        let panierParse = JSON.parse(localStorage.getItem('panier'));  //???
 
         //Si l'objet représentant le local storage existe déjà, alors nous ajoutons les valeurs de l'objet appareil
         if(panierParse!== null){
@@ -51,13 +50,13 @@ const fetchApi = async function () {
             panier.push(ajoutAppareil);
             //Enfin, nous transformons notre tableau en string avant de l'envoyer dans le local storage (car ce dernier n'accepte que des strings)
             let panierString = JSON.stringify(panier);                  //??????
-            localStorage.setItem('panier', panierString); 
+            localStorage.setItem('panier', panierString);               //setTtem ???
         }
 
         //Détail de la fonction utilisée lorsque le panier existe déjà.   ??????
         function ajoutPanier(item){
             //Nous créons une variable qui défini si le produit de la page se trouve déjà dans le tableau panier.
-            let articleExistant = panierParse.find(element => element.id === item.id);  ?????
+            let articleExistant = panierParse.find(element => element.id === item.id);  //?????
             //S'il s'y trouve déjà, alors on augmente la quantité de 1, et on actualise le localStorage
             if(articleExistant !== undefined){
                 articleExistant.qty++;

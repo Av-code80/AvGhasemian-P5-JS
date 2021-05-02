@@ -5,7 +5,7 @@
         - le champs est manquant :"Merci de renseigner "valeur demandée" ".
         - le champs répond à toutes les exigences et est déclaré valide.
         - le champs n'est pas valide (PatternMismatch notamment) et on demande à l'internaute de vérifier ses informations. 
-
+        
 */
 
 const verifNom = nom.addEventListener('blur', (e) => {

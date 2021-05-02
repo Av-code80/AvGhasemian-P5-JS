@@ -61,14 +61,15 @@
         <div class="panier-wrapper">
             <section class="panier">
                 <H1>Votre panier</H1> 
-                <div id="panier">
-                    
+                <div id="panier">   
                 </div>
+
                 <div class="panier-prix">
                     <p class="panier-prix__total">Total</p>
                     <div id="prixTotal" class="panier-prix__pTotal"></div>
                 </div>
             </section>
+
             <section class="contact">
                 <form id = "formulaireDeContact" name = "formulaireDeContact" class="formulaire" method="POST">
                     <div class="formulaire__titre">Validez votre commande</div> 
@@ -79,7 +80,7 @@
                     
                         <label class="formulaire__label" for="prenom" >Prénom*</label>
                         <span class="formulaire__erreur" id="erreurPrenom"></span>
-                        <input class="formulaire__input" type="text"  name="lastName" id="prenom" placeholder="Indiquez votre prénom" pattern= "^[A-Za-zïéèùÉÈÏ]{2,15}[\S\- ]?[A-Za-zïéèùÉÈÏ]{0,15}" required/><br/>
+                        <input class="formulaire__input" type="text" name="lastName" id="prenom" placeholder="Indiquez votre prénom" pattern= "^[A-Za-zïéèùÉÈÏ]{2,15}[\S\- ]?[A-Za-zïéèùÉÈÏ]{0,15}" required/><br/>
                     </div>
                     <div class="formulaire__coordonnées">
                         
@@ -108,7 +109,7 @@
             <li>&#169; Orinoco. All rights reserved. </li>
         </ul> 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>   
     <script src="sweetalert2.all.min.js"></script>
     <script src= "./js/fonctionPanier.js"></script>
     <script src= "./js/panier.js"></script>

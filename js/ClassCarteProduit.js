@@ -28,10 +28,10 @@ class Carte {
 
         const cartePrix = document.createElement('div');
         cartePrix.classList.add('carte__prix');
-        cartePrix.textContent = this.displayPrice('fr-FR', 'EUR');
+        cartePrix.textContent = this.displayPrice('fr-FR', 'EUR');  //???
 
         const carteDescription = document.createElement('div');
-        carteDescription.classList.add('carte__description');
+        carteDescription.classList.add('carte__description');       //???
 
         const carteDescriptionHover = document.createElement('div');
         carteDescriptionHover.classList.add('carte__description-hover');
@@ -44,22 +44,26 @@ class Carte {
         const carteLenses = document.createElement('ul'); 
         carteLenses.classList.add('carte__description__option');
         
-        this.lenses.forEach(lense => {
-            const carteLensesItems = document.createElement('li');carteLensesItems.textContent = lense; 
-            carteLenses.appendChild(carteLensesItems); 
+        this.lenses.forEach(lense => {                              //???this.lenses
+            const carteLensesItems = document.createElement('li');
+            carteLensesItems.textContent = lense;                       //???
+            carteLenses.appendChild(carteLensesItems);                  //??? li
         });
         
+
         // Assignation des éléments 
         wrapper.appendChild(carte);
-        carte.appendChild(carteImage);carte.appendChild(cartePrix);carte.appendChild(carteDescription);
+        carte.appendChild(carteImage);
+        carte.appendChild(cartePrix);
+        carte.appendChild(carteDescription);
+        carte.appendChild(carteDescriptionHover);
         carteDescription.appendChild(carteTitre);
         carteDescription.appendChild(carteLenses);
-        carte.appendChild(carteDescriptionHover);
         
         // Création automatique de l'URL de destination qui prend en compte l'Id de chaque produit.
-        const urlElement = new URL("https://thomasgouin.github.io/projet5-oc-Orinoco/produit.html");
+        const urlElement = new URL("https://github.com/Av-code80/AvGhasemian-ShopProject-JS/blob/master/js/produit.js");
             urlElement.searchParams.set("id", this._id);
-            
+                
         // Au clic sur chaque carte, nous renvoyons vers l'URL correspondante au produit
         carte.addEventListener('click', function(){
             window.location.href = urlElement;

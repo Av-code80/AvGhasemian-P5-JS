@@ -1,6 +1,6 @@
 
 //On récupère l'ensemble des éléments du formulaire
-const formulaire = document.forms['formulaireDeContact'];
+const formulaire = document.forms['formulaireDeContact'];       //document.forms.formulaireDeContact
 const nom = document.forms['formulaireDeContact']['lastName'];
 const prenom = document.forms['formulaireDeContact']['firstName'];
 const email = document.forms['formulaireDeContact']['email'];
@@ -39,7 +39,7 @@ if(parseInt(prixTotal.innerText) !== 0){
         //le tableau des produits qui sont dans le panier au moment du clic
         let products = [];
         JSON.parse(localStorage.getItem('panier'))
-            for(let i = 0; i<panierParse.length; i++){
+            for(let i = 0; i < panierParse.length; i++){    //why panierParse.length not products ???
             products.push(panierParse[i].id);
         }
         //L'objet total qui sera envoyé et qui contient les deux variables précédentes. 
